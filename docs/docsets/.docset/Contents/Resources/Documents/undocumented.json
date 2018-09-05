@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/adrianlabbe/Desktop/ObjectUserDefaults/ObjectUserDefaults/ObjectUserDefaultsItem.swift",
+      "line": 14,
+      "symbol": "ObjectUserDefaultsItem.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/adrianlabbe/Desktop/ObjectUserDefaults"
+}

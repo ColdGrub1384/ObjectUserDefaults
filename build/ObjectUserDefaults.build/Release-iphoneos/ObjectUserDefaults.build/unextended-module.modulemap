@@ -1,0 +1,10 @@
+framework module ObjectUserDefaults {
+  umbrella header "ObjectUserDefaults.h"
+
+  export *
+  module * { export * }
+}
+
+module ObjectUserDefaults.__Swift {
+    exclude header "ObjectUserDefaults-Swift.h"
+}
