@@ -1,0 +1,11 @@
+framework module ObjectUserDefaults {
+  umbrella header "ObjectUserDefaults.h"
+
+  export *
+  module * { export * }
+}
+
+module ObjectUserDefaults.Swift {
+    header "ObjectUserDefaults-Swift.h"
+    requires objc
+}

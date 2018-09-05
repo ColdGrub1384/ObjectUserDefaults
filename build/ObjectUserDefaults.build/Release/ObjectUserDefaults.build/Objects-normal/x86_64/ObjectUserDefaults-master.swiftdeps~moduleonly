@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2 (swiftlang-1000.0.36 clang-1000.10.44)"
+options: "6f401cb5db3203b8fe9ec0cb1475e8a3"
+build_time: [1536191316, 355267000]
+inputs:
+  "/Users/adrianlabbe/Desktop/ObjectUserDefaults/ObjectUserDefaults/ObjectUserDefaults.swift": [9223372036, 854775807]
+  "/Users/adrianlabbe/Desktop/ObjectUserDefaults/ObjectUserDefaults/ObjectUserDefaultsItem.swift": [9223372036, 854775807]
