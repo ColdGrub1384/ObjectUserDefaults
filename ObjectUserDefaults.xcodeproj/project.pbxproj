@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C9C11A81214075F3005EB9C2 /* ObjectUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = C9C11A7F214075F3005EB9C2 /* ObjectUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C9C11A8821407600005EB9C2 /* ObjectUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C11A8721407600005EB9C2 /* ObjectUserDefaults.swift */; };
 		C9C11A8A214077F3005EB9C2 /* ObjectUserDefaultsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C11A89214077F3005EB9C2 /* ObjectUserDefaultsItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9C11A7C214075F3005EB9C2 /* ObjectUserDefaults.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectUserDefaults.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C9C11A7F214075F3005EB9C2 /* ObjectUserDefaults.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectUserDefaults.h; sourceTree = "<group>"; };
 		C9C11A80214075F3005EB9C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9C11A8721407600005EB9C2 /* ObjectUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectUserDefaults.swift; sourceTree = "<group>"; };
 		C9C11A89214077F3005EB9C2 /* ObjectUserDefaultsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectUserDefaultsItem.swift; sourceTree = "<group>"; };
@@ -50,7 +48,6 @@
 		C9C11A7E214075F3005EB9C2 /* ObjectUserDefaults */ = {
 			isa = PBXGroup;
 			children = (
-				C9C11A7F214075F3005EB9C2 /* ObjectUserDefaults.h */,
 				C9C11A8721407600005EB9C2 /* ObjectUserDefaults.swift */,
 				C9C11A89214077F3005EB9C2 /* ObjectUserDefaultsItem.swift */,
 				C9C11A80214075F3005EB9C2 /* Info.plist */,
@@ -65,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9C11A81214075F3005EB9C2 /* ObjectUserDefaults.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

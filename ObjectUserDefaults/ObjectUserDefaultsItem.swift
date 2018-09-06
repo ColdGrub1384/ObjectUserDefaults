@@ -9,16 +9,16 @@
 import Foundation
 
 /// A class representing a value stored in `UserDefaults` or `ObjectUserDefaults`. The item can exist or not.
-@objc public class ObjectUserDefaultsItem: NSObject {
+public class ObjectUserDefaultsItem: NSObject {
     
     public override var description: String {
         return String(describing: value ?? key)
     }
     
     /// The key of the object in `UserDefaults`.
-    @objc private(set) public var key: String
+    private(set) public var key: String
     
-    @objc private var userDefaults: UserDefaults
+    private var userDefaults: UserDefaults
     
     internal init(key: String, fromUserDefaults userDefaults: UserDefaults) {
         self.key = key
@@ -35,7 +35,7 @@ import Foundation
     /// Returns or sets the object associated with the specified key.
     ///
     /// - Returns: The object associated with the specified key, or `nil` if the key was not found.
-    @objc public var value: Any? {
+    public var value: Any? {
         get {
             return userDefaults.value(forKey: key)
         }
@@ -50,7 +50,7 @@ import Foundation
     /// Wraps `UserDefaults.url(forKey:)`.
     ///
     /// - Returns: The URL associated with the specified key. If the key doesn’t exist, this method returns `nil`.
-    @objc public var urlValue: URL? {
+    public var urlValue: URL? {
         get {
             return userDefaults.url(forKey: key)
         }
@@ -65,7 +65,7 @@ import Foundation
     /// Wraps `UserDefaults.array(forKey:)`.
     ///
     /// - Returns: The array associated with the specified key, or `nil` if the key does not exist or its value is not an array.
-    @objc public var arrayValue: [Any]? {
+    public var arrayValue: [Any]? {
         get {
             return userDefaults.array(forKey: key)
         }
@@ -80,7 +80,7 @@ import Foundation
     /// Wraps `UserDefaults.dictionary(forKey:)`.
     ///
     /// - Returns: The dictionary object associated with the specified key, or `nil` if the key does not exist or its value is not a dictionary.
-    @objc public var dictionaryValue: [String:Any]? {
+    public var dictionaryValue: [String:Any]? {
         get {
             return userDefaults.dictionary(forKey: key)
         }
@@ -95,7 +95,7 @@ import Foundation
     /// Wraps `UserDefaults.string(forKey:)`.
     ///
     /// - Returns: For string values, the string associated with the specified key; for number values, the string value of the number. Returns `nil` if the default does not exist or is not a string or number value.
-    @objc public var stringValue: String? {
+    public var stringValue: String? {
         get {
             return userDefaults.string(forKey: key)
         }
@@ -110,7 +110,7 @@ import Foundation
     /// Wraps `UserDefaults.stringArray(forKey:)`.
     ///
     /// - Returns: The array of string objects, or `nil` if the specified default does not exist, the default does not contain an array, or the array does not contain strings.
-    @objc public var stringArray: [String]? {
+    public var stringArray: [String]? {
         get {
             return userDefaults.stringArray(forKey: key)
         }
@@ -125,7 +125,7 @@ import Foundation
     /// Wraps `UserDefaults.data(forKey:)`.
     ///
     /// - Returns: The data object associated with the specified key, or `nil` if the key does not exist or its value is not a data object.
-    @objc public var dataValue: Data? {
+    public var dataValue: Data? {
         get {
             return userDefaults.data(forKey: key)
         }
@@ -140,7 +140,7 @@ import Foundation
     /// Wraps `UserDefaults.bool(forKey:)`.
     ///
     /// - Returns: The Boolean value associated with the specified key. If the specified key doesn‘t exist, this method returns `false`.
-    @objc public var boolValue: Bool {
+    public var boolValue: Bool {
         get {
             return userDefaults.bool(forKey: key)
         }
@@ -155,7 +155,7 @@ import Foundation
     /// Wraps `UserDefaults.integer(forKey:)`.
     ///
     /// - Returns: The integer value associated with the specified key. If the specified key doesn‘t exist, this method returns 0.
-    @objc public var integerValue: Int {
+    public var integerValue: Int {
         get {
             return userDefaults.integer(forKey: key)
         }
@@ -170,7 +170,7 @@ import Foundation
     /// Wraps `UserDefaults.float(forKey:)`.
     ///
     /// - Returns: The float value associated with the specified key. If the key doesn‘t exist, this method returns 0.
-    @objc public var floatValue: Float {
+    public var floatValue: Float {
         get {
             return userDefaults.float(forKey: key)
         }
@@ -184,7 +184,7 @@ import Foundation
     /// Wraps `UserDefaults.double(forKey:)`.
     ///
     /// - Returns: The double value associated with the specified key. If the key doesn‘t exist, this method returns 0.
-    @objc public var doubleValue: Double {
+    public var doubleValue: Double {
         get {
             return userDefaults.double(forKey: key)
         }
