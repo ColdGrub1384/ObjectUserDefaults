@@ -16,6 +16,16 @@ item.value = true // Sets the value of the key
 print(item.boolValue) // Prints the boolean value of the key
 ```
 
+## Installation
+
+### Cocoapods
+
+`pod 'ObjectUserDefaults'`
+
+### Manual
+
+Copy this repo to yours or add it as submodule, drag the xcode project to your one and embed the framework in your target's info tab.
+
 ## Documentation
 
 See the docs [here](https://coldgrub1384.github.io/ObjectUserDefaults)
